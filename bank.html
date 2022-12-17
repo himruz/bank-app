@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl font-bold text-center mt-6 mb-6">
+            Welcome to <span class="text-orange-400">Baap er Bank</span>
+        </h1>
+    </header>
+    <main>
+        <section>
+            <div class="grid grid-cols-3 gap-4 justify-center w-9/12 mx-auto p-8">
+                <div class="bg-emerald-100 p-5 rounded-lg shadow-lg shadow-slate-200">
+                    <h2 class="text-slate-800 text-3xl font-semibold text-center mb-4">Deposit</h2>
+
+                    <h2 class="text-slate-800 text-5xl font-semibold text-center">$<span id="deposite-amount">0</span>
+                    </h2>
+
+                </div>
+                <div class="bg-cyan-200 p-5 rounded-lg shadow-lg shadow-slate-200">
+                    <h2 class="text-slate-800 text-3xl font-semibold text-center mb-4">Withdraw</h2>
+
+                    <h2 class="text-slate-800 text-5xl font-semibold text-center">$<span id="withdraw-amount">0</span>
+                    </h2>
+
+                </div>
+                <div class="bg-rose-200 p-5 rounded-lg shadow-lg shadow-slate-200">
+                    <h2 class="text-slate-800 text-3xl font-semibold text-center mb-4">Balance</h2>
+
+                    <h2 class="text-slate-800 text-5xl font-semibold text-center">$<span id="balance-amount">0</span>
+                    </h2>
+
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="grid grid-cols-2 gap-4  w-9/12 mx-auto p-8">
+                <div class="bg-blue-200 p-5 rounded-lg shadow-lg shadow-slate-200 text-center">
+                    <h1 class="text-slate-800 text-3xl font-semibold text-center mb-4">Please Deposite</h1>
+                    <div>
+                        <input type="number" name="" id="deopsite" class="rounded-lg block mx-auto p-3 w-9/12 mb-6"
+                            placeholder="$ Amount You Want To Deposite">
+                        <button type="submit" id="deposite-btn"
+                            class="mb-6 mx-auto bg-orange-400 px-8 py-2 mt-3 text-white rounded-t-md rounded-b-md font-medium hover:bg-slate-900">Deposie</button>
+                    </div>
+                </div>
+                <div class="bg-emerald-200 p-5 rounded-lg shadow-lg shadow-slate-200 text-center">
+                    <h1 class="text-slate-800 text-3xl font-semibold text-center mb-6">Please Withdraw</h1>
+                    <div>
+                        <input type="number" name="" id="withdraw" class="rounded-lg block mx-auto p-3 w-9/12 mb-6"
+                            placeholder="$ Amount You Want To Withdraw">
+                        <button type="submit" id="withdraw-btn"
+                            class="mb-6 mx-auto bg-orange-400 px-8 py-2 mt-3 text-white rounded-t-md rounded-b-md font-medium hover:bg-slate-900">Withdraw</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <script src="bank.js"></script>
+</body>
+
+</html>
